@@ -1,0 +1,27 @@
+{
+	"registration": {
+		"subject": "Noteslate registration email",
+		"text": "Welcome to noteslate, we confirm your registration"
+	},
+	"password": {
+		"generateNew": {
+			"header": "Password reset",
+			"password": "Enter your password",
+			"passwordCheck": "Reenter your password",
+			"passwordChange": "Confirm"
+		},
+		"askForNew": {
+			"header": "Ask for new password",
+			"email": "Enter your email address",
+			"sendEmail": "Send",
+			"subject": "Generate new password for Noteslate",
+			"text": "Go to this link : %s and set up new password"
+		},
+		"messages": {
+			"noUser": "User with given email does not exist",
+			"noUserToken": "Your token is invalid. Check please, if you have right URL. If it does not solve your problem, ask for another change password",
+			"success": "Email was sent",
+			"successToken": "Password was changed"
+		}
+	}
+}

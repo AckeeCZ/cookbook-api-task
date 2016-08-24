@@ -1,0 +1,27 @@
+{
+	"registration": {
+		"subject": "Registrace v noteslate",
+		"text": "Vítejte v noteslate, potvrzujeme vaší registraci"
+	},
+	"password": {
+		"generateNew": {
+			"header": "Reset hesla",
+			"password": "Vložte heslo",
+			"passwordCheck": "Potvrďte heslo",
+			"passwordChange": "Změnit"
+		},
+		"askForNew": {
+			"header": "Požádejte o nové heslo",
+			"email": "Vložte svojí emailovou adresu",
+			"sendEmail": "Poslat",
+			"subject": "Generace nového hesla",
+			"text": "Běžte na tento odkaz : %s a nastavte si nové heslo"
+		},
+		"messages": {
+			"noUser": "Uživatel s tímto emailem neexistuje",
+			"noUserToken": "Váš token není validní. Zkontrolujte prosím, jestli máte správnou URL. Pokud to nevyřeší váš problém, požádejte si znovu o změnu hesla.",
+			"success": "Email byl poslán",
+			"successToken": "Heslo bylo změněno"
+		}
+	}
+}

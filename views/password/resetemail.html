@@ -1,0 +1,58 @@
+{% extends '../templateAnonymous.html' %}
+
+{% block contentWhole %}
+
+<div class="col-md-3"></div>
+
+<div class="col-md-6">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{{header}}
+            </h3>
+        </div>
+        <div class="panel-body">
+            <form id="form" method="post" action="" data-toggle="validator">
+                {% if isOk %}
+                <div class="form-group">
+                    <div class="alert alert-success">
+                        {{isOk}}
+                    </div>
+                </div>
+                {% else %}
+                <div class="form-group">
+                    <label for="email">
+                    </label>
+                    <input name="email" required type="email" class="form-control" id="email"
+                           placeholder="{{email}}" value="{{urlEmail}}">
+                    <div class="help-block with-errors"></div>
+
+                </div>
+                <div class="pull-right">
+                    <input type="submit" class="btn btn-success" value="{{sendEmail}}"/>
+                </div>
+
+                <br/>
+                <br/>
+
+                {% if formError %}
+                <div class="form-group">
+                    <div class="alert alert-danger">
+                        {{formError}}
+                    </div>
+                </div>
+                {% endif %}
+                {% endif %}
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<div class="col-md-3"></div>
+
+{% endblock %}
+
+{% block javascripts %}
+{% parent %}
+{% endblock %}
