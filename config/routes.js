@@ -6,6 +6,14 @@ const NotFoundError = require('errors/NotFoundError');
 const winston = require('components/Winston');
 
 module.exports = function(app) {
+    app.get('/', (req, res, next) => {
+        res.out = {
+            hi: 'YOU DID NOT TYPED ADDRESS RIGHT :( :( :(, why havent you read the specification properly? Whyyyyy?!',
+            please: 'try address like this: http://cookbook.ack.ee/api/v1/recipes',
+            apiary: 'is here http://docs.cookbook3.apiary.io/',
+            ps: 'have a nice day'};
+        return next();
+    });
     app.use('/api/v1', crud);
 
     // Default error handler

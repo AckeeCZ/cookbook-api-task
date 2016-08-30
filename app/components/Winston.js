@@ -1,6 +1,5 @@
 const winston = require('winston');
 const config = require('config');
-const _ = require('lodash');
 
 function transportsMethod() {
     const transports = [];

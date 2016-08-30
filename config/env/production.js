@@ -2,5 +2,4 @@
  * Expose
  */
 
-module.exports = {
-};
+module.exports = {};
