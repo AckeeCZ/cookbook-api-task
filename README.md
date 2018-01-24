@@ -2,7 +2,7 @@
 
 Welcome! Wanna join [Ackee][1]? Or you just don't know what to do on a lazy sunday afternoon?
 
-Here is a task for you! Enhance our Node.js backend app for delicious ackee recipes. You can
+Here is a task for you! Enhance our Node.js backend app for delicious ackee recipes. You can:
 - Add more endpoints
 - Refactor the current ones
 - Add discussions under recipes
