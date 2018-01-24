@@ -1,3 +1,15 @@
+# Ackee Cookbook Node.js
+
+Welcome! Wanna join [Ackee][1]? Or you just don't know what to do on a lazy sunday afternoon?
+
+Here is a task for you! Enhance our Node.js backend app for delicious ackee recipes. You can
+- Add more endpoints
+- Refactor the current ones
+- Add discussions under recipes
+- Link to a 3rd party API
+
+It should take you around 2-4 hours to complete.
+
 ## How to run
 
 run command "npm install"
@@ -22,6 +34,3 @@ Or you can set up your Webstrom environment
 
 Current API Documentation can be bound on APIARY [https://app.apiary.io/cookbook3/editor]
 
-## Your Task
-
-Enhance the API with another endpoints or feel free to refactor the current ones. You can add discussions under recipes or link it with other 3rd party APIs. It is up to you :)
