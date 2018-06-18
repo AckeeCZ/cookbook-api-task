@@ -9,8 +9,9 @@ const winston = require('components/Winston');
 const fs = require('fs');
 const express = require('express');
 const mongoose = require('mongoose');
-const Promise = require('bluebird');
-Promise.promisifyAll(mongoose);
+
+// Use native promises
+mongoose.Promise = global.Promise;
 
 const config = require('config');
 
@@ -20,7 +21,7 @@ const port = process.env.PORT || config.port;
 if (!config.params.useRelationDb) {
 // Connect to mongodb
     const connect = function() {
-        const options = {server: {socketOptions: {keepAlive: 1}}};
+        const options = { keepAlive: 1 };
         mongoose.connect(config.db, options);
     };
     connect();
