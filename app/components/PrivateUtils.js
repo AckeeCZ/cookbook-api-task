@@ -1,4 +1,3 @@
-const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
 const _ = require('lodash');
 

@@ -6,15 +6,15 @@ const NotFoundError = require('errors/NotFoundError');
 const _ = require('lodash');
 
 exports.recipeCreate = object => {
-    return (new Recipe(object)).saveAsync();
+    return (new Recipe(object)).save();
 };
 
 exports.recipeDetail = params => {
-    return Recipe.findOneAsync(params);
+    return Recipe.findOne(params);
 };
 
 exports.recipeDetailWithScore = params => {
-    return Recipe.findOneAsync(params).then(recipe => {
+    return Recipe.findOne(params).then(recipe => {
         if (!recipe) {
             throw new NotFoundError();
         }
@@ -31,27 +31,27 @@ exports.recipeList = params => {
 };
 
 exports.recipeUpdate = (object, id) => {
-    return Recipe.findOneAndUpdateAsync({_id: id}, {$set: object}, {new: true});
+    return Recipe.findOneAndUpdate({_id: id}, {$set: object}, {new: true});
 };
 
 exports.recipeDelete = id => {
-    return Recipe.findByIdAndRemoveAsync({_id: id});
+    return Recipe.findByIdAndRemove({_id: id});
 };
 
 exports.recipePurge = () => {
-    return Recipe.removeAsync({});
+    return Recipe.remove({});
 };
 
 exports.ratingCreate = object => {
-    return (new Rating(object)).saveAsync();
+    return (new Rating(object)).save();
 };
 
 exports.ratingPurge = () => {
-    return Rating.removeAsync({});
+    return Rating.remove({});
 };
 
 exports.recipeAverageScore = id => {
-    return Rating.findAsync({recipe: id}).then(recipes => {
+    return Rating.find({recipe: id}).then(recipes => {
         if (!recipes || recipes.length === 0) {
             return 0;
         }
