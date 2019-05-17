@@ -10,7 +10,7 @@ Your goal is to design and implement a simple REST API for our mobile and web cl
 ## The task ahead
 
 ### Requirements
-1. Use [Our project template](link/to/github/ackee/template) to get started. Template's readme should give you more information on how to use it.
+1. Use [Our project template](https://github.com/AckeeCZ/node-template) to get started. Template's readme should give you more information on how to use it.
 2. Create an endpoint to create a new Problem. A Problem can be either riddle or math expression - more on that below.
 3. Create endpoints for update, delete, read and list Problems.
 4. Create an endpoint to answer a Problem. Only correct answers are accepted.
@@ -54,7 +54,7 @@ For starters, the expression can include
      - (Bonus) Enhance your solver with binary operators `*/`, unary operators `-+` and operator precedence.
 
 
-<div style="text-align: center">
+<div align="center">
 <br/>
 🙘.🙚
 <br/>
