@@ -1,5 +1,0 @@
-/**
- * Expose
- */
-
-module.exports = {};
