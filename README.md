@@ -11,14 +11,14 @@ Your goal is to design and implement a simple REST API for our mobile and web cl
 
 ### Requirements
 1. Use [Our project template](https://github.com/AckeeCZ/node-template) to get started. Template's readme should give you more information on how to use it.
-2. Create an endpoint to create a new Problem. A Problem can be either riddle or math expression - more on that below.
-3. Create endpoints for update, delete, read and list Problems.
-4. Create an endpoint to answer a Problem. Only correct answers are accepted.
-5. Modify Problems List to support filtering by Problem type and by answered / unasnwered for current user.
-6. Modify update, delete endpoints so that only users who created those Problems can perform this action.
-7. (_Optional_) Modify update/create Problem endpoints to validate input data. Reject requests for empty problems and respond accordingly.
-8. (_Optional_) Authenticate users using Basic access authentication. No need to verify against any database - assume password is always correct. Use username from BA credentials to identify the User.
-10. When completed, send us as link to your git repository or any other share services like GDrive etc.
+2. Authenticate users using Basic access authentication. No need to verify against any database - assume password is always correct. Use username from BA credentials to identify the User.
+3. User can create a new Problem. A Problem can be either riddle or math expression - more on that below.
+4. User can update, delete, read and list Problems.
+5. User can answer a Problem. Only correct answers are accepted.
+6. Modify update, delete operations so that only users who created those Problems can perform this action.
+7. (_Optional_) Modify Problems List to support filtering by Problem type and by answered / unasnwered for current user
+8. (_Optional_) Modify update/create Problem operations to validate the input data. Reject requests for empty problems and respond accordingly.
+9. When completed, send us as link to your git repository or any other share services like GDrive etc.
 
 
 A Problem can either be a _riddle_ (e.g. `If two is a company and three is a crowd. What is four and five?`) or an _arithmetic expression_ (e.g. `1- (10/5)* 2 +7`, where the expression is a simple string).
